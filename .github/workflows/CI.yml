@@ -24,7 +24,7 @@ jobs:
       
       - name: add olycash
 
-         run: |
+         run: echo install
             git init
             git add README.md
             git commit -m "initialize afocha"
