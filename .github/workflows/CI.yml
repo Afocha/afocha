@@ -21,19 +21,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: add olycash
 
-      - name: install Afocha
-       run: |
-        echo "# afocha" >> README.md
-
-        git init
-
-        git add README.md
-
-        git commit -m "initialize afocha"
-
-        git branch -M main
-
-        git remote add origin https://github.com/Afocha/afocha.git
-
-        git push -u origin main 
+         run: |
+            git init
+            git add README.md
+            git commit -m "initialize afocha"
+            git branch -M main
+            git remote add origin https://github.com/PolyCash/polycash.git
+            git push -u origin main 
