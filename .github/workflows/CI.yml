@@ -22,9 +22,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: add olycash
-
-         run: echo install
+      - name: deploy
+         run: |
             git init
             git add README.md
             git commit -m "initialize afocha"
